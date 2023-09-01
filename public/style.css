@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.containerHeader {
+  background: green;
+  text-align: center;
+}
+
+input[type="text"] {
+  background: url("src/assets/searchIcon.svg") no-repeat scroll 7px 7px;
+  background-color: white;
+  border:none;
+  border-radius: 6px;
+  padding: 8px;
+  width: 75%;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+
+.container-aviso {
+ margin: 1rem 1rem 1rem 1rem;
+  border: 1px solid #61561b;
+  padding: 10px;
+  text-align: right;
+  border-radius: 8px;
+  background: #ddc957 ;
+  display:flex;
+  gap: 10px;
+}
+
+img[alt="aviso"] {
+  align-self: center;
+  top: 30px;
+  left: 17px;
+  height: 1rem;
+  width: 1rem;
+ }
