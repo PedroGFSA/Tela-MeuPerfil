@@ -1,11 +1,28 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
 }
 
 .containerHeader {
   background: #006557;
+  background-size: 100% 100%;
   text-align: center;
+}
+
+
+.container-icones{
+  display: flex;
+  gap: 5px;
+  padding-top: 1rem;
+  justify-content: end;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+img[alt="horario"] {
+  position: absolute;
+  left: 0.5rem;
 }
 
 input[type="text"] {
@@ -28,6 +45,7 @@ input[type="text"] {
   background: #F8F4C4 ;
   display:flex;
   gap: 10px;
+  font-size: 12px;
 }
 
 img[alt="aviso"] {
@@ -58,6 +76,15 @@ img[alt="aviso"] {
   margin-bottom: 0.2rem;
 }
 
+.containerSeuPerfil p {
+  font-size: 12px;
+}
+
+.filter-blue {
+  filter: invert(28%) sepia(88%) saturate(908%) hue-rotate(170deg) brightness(94%) contrast(98%);
+  margin-left: 6px;
+}
+
 .fa-star {
   color:gray;
 } 
@@ -85,7 +112,34 @@ img[alt="icone de perfil"] {
   position: relative;
 }
 
-.completarPerfil:after {
-  content: "➜";
-  
+.completarPerfil p {
+  font-weight: 600;
+  font-size: 14px;
 }
+
+footer .capacitacoes {
+  margin-top: 1.5rem;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+footer div h3 {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+footer div span {
+  font-weight: bold;
+  color: #07689F;
+  font-size: 13px;
+  margin-right: 1.5rem;
+}
+
+.container-img {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+

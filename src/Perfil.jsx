@@ -19,7 +19,11 @@ const Perfil = () => {
           </div>
         </div>
       </div>
-      <h3 className="completarPerfil">Completar Perfil</h3>
+      <div className="completarPerfil">
+        <p>Completar Perfil</p>
+        <img width="18px" height="18px" src="src\assets\Arrow.svg" alt="arrow" className="filter-blue"/>
+      </div>
+      
     </div>
   )
 }
