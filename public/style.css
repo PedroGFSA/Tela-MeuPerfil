@@ -4,7 +4,7 @@
 }
 
 .containerHeader {
-  background: green;
+  background: #006557;
   text-align: center;
 }
 
@@ -21,19 +21,71 @@ input[type="text"] {
 
 .container-aviso {
  margin: 1rem 1rem 1rem 1rem;
-  border: 1px solid #61561b;
+  border: 1px solid #E4D5BB;
   padding: 10px;
   text-align: right;
   border-radius: 8px;
-  background: #ddc957 ;
+  background: #F8F4C4 ;
   display:flex;
   gap: 10px;
 }
 
 img[alt="aviso"] {
   align-self: center;
-  top: 30px;
-  left: 17px;
   height: 1rem;
   width: 1rem;
  }
+
+.containerSeuPerfil {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.containerSeuPerfil:after{
+  content : "";
+  bottom  : 0;
+  max-width: 290px;
+  height  : 1px;
+  width   : 90%;  /* or 100px */
+  border-bottom:1px solid #9c9999;
+}
+
+.containerSeuPerfil h2 {
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.fa-star {
+  color:gray;
+} 
+
+img[alt="icone de perfil"] {
+  align-self: center;
+  height: 20%;
+  width: 20%; 
+}
+
+.estrelas {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 4px;
+  
+}
+
+.completarPerfil {
+  margin: 0;
+  margin-top: 1rem;
+  color: #07689F;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.completarPerfil:after {
+  content: "➜";
+  
+}
