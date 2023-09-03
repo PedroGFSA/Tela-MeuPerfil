@@ -33,19 +33,21 @@ input[type="text"] {
   padding: 8px;
   width: 75%;
   margin: 1.5rem 0 1.5rem 0;
+  text-align: center;
 }
 
 
 .container-aviso {
  margin: 1rem 1rem 1rem 1rem;
-  border: 1px solid #E4D5BB;
+  border: 1px solid #b19e7e;
   padding: 10px;
   text-align: right;
   border-radius: 8px;
   background: #F8F4C4 ;
+  color: #AD9154;
   display:flex;
   gap: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 img[alt="aviso"] {
@@ -59,15 +61,6 @@ img[alt="aviso"] {
   flex-wrap: wrap;
   gap: 1rem;
   margin-left: 1rem;
-}
-
-.containerSeuPerfil:after{
-  content : "";
-  bottom  : 0;
-  max-width: 290px;
-  height  : 1px;
-  width   : 90%;  /* or 100px */
-  border-bottom:1px solid #9c9999;
 }
 
 .containerSeuPerfil h2 {
@@ -86,27 +79,27 @@ img[alt="aviso"] {
 }
 
 .fa-star {
-  color:gray;
+  color:#D3D3D3;
 } 
 
 img[alt="icone de perfil"] {
   align-self: center;
-  height: 20%;
-  width: 20%; 
+  height: 18%;
+  width: 18%; 
 }
 
 .estrelas {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   display: flex;
-  gap: 4px;
+  gap: 6px;
   
 }
 
 .completarPerfil {
   margin: 0;
   margin-top: 1rem;
-  color: #07689F;
+  color: #257AAA;
   display: flex;
   justify-content: center;
   position: relative;
@@ -120,9 +113,9 @@ img[alt="icone de perfil"] {
 footer .capacitacoes {
   margin-top: 1.5rem;
   display: flex;
-  font-size: 12px;
+  font-size: 16px;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 footer div h3 {
@@ -131,9 +124,9 @@ footer div h3 {
 }
 
 footer div span {
-  font-weight: bold;
-  color: #07689F;
-  font-size: 13px;
+  font-weight: 600;
+  color: #257AAA;
+  font-size: 14px;
   margin-right: 1.5rem;
 }
 
@@ -141,5 +134,92 @@ footer div span {
   display: flex;
   gap: 1rem;
   margin-left: 1rem;
+  
 }
 
+.container-alimentos{ 
+  position: relative;
+}
+.container-doses{ 
+  position: relative;
+}
+
+.tipo-legenda-alimentos {
+  background-color: #D48A04;
+  font-size: 14px;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 12px;
+  top: 5px;
+  left: 0.8rem;
+  position: absolute;
+}
+
+.legenda-alimentos {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  bottom: 1rem;
+  left: 0.8rem;
+  text-align: start;
+  
+}
+
+.tipo-legenda-doses {
+  background-color: #48347B;
+  font-size: 14px;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 12px;
+  top: 5px;
+  left: 0.8rem;
+  position: absolute;
+}
+
+.legenda-doses {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  bottom: 1rem;
+  left: 0.8rem;
+  text-align: start;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .containerSeuPerfil:after{
+    content : "";
+    bottom  : 0;
+    
+    height  : 1rem;
+    width   : 90%;  /* or 100px */
+    border-bottom:1px solid #D3D3D3;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  img[alt="alimentos"]{
+    width: 150px;
+    height: 130px;
+  }
+  img[alt="doses"]{
+    width: 150px;
+    height: 130px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  img[alt="icone de perfil"] {
+    align-self: center;
+    height: 10%;
+    width: 10%; 
+  }
+}
